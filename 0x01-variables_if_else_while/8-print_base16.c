@@ -19,11 +19,11 @@ int main(void)
 		i++;
 	}
 
-	i = 97;
-	while (i <= 102)
+	j = 97;
+	while (j <= 102)
 	{
-		putchar(i);
-		i++;
+		putchar(j);
+		j++;
 	}
 	putchar(10);
 	return (0);
