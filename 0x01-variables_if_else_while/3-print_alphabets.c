@@ -10,6 +10,7 @@
 int main(void)
 {
 	int i;
+	int j;
 
 	i = 97;
 	while (i <= 122)
@@ -18,11 +19,12 @@ int main(void)
 		i++;
 	}
 
-	i = 65;
-	while (i <= 90)
+	j = 65;
+	while (j <= 90)
 	{
-		putchar(i);
-		i++;
+		putchar(j);
+		j++;
 	}
 	putchar(10);
+	return (0);
 }
