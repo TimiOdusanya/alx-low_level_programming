@@ -3,8 +3,6 @@
 /**
  * main - Test to give the correct output when given a case of 0.
  *
- * Description: Test function
- *
  * Return: Always 0
  */
 
@@ -14,6 +12,5 @@ int main(void)
 
 	i = 0;
 	positive_or_negative(i);
-
 	return (0);
 }
