@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * main - Ap rogram that prints out FizzBuzz
  *
