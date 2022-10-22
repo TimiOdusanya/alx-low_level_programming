@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 
 /**
@@ -11,30 +10,27 @@
 int main(void)
 {
 	long int num;
-	long int i;
-	long int j;
+	long int quotient;
+	long int divisor;
 
 	num = 612852475143;
-	j = -1;
 
-	while (num % 2 == 0)
-	{
-		j = 2;
-		num /= 2;
-	}
+	quotient = num;
+	divisor = 2;
 
-	for (i = 3; i <= sqrt(num); i = i + 2)
+	while (quotient != divisor)
 	{
-		while (num % i == 0)
+		if (quotient % divisor == 0)
 		{
-			j = i;
-			num = num / 1;
+			quotient = quotient / divisor;
+		}
+		else
+		{
+			divisor++;
 		}
 	}
 
-	if (num > 2)
-		j = num;
-	printf("%ld\n", j);
+	printf("%li\n", quotient);
 
 	return (0);
 }
